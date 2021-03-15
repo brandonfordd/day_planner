@@ -39,7 +39,7 @@ $("textarea").each(function () {
 })
 
 //function for save button. On click data from each text area, from the referance of the id, is save to the local storage 
-$("button").on("click", function () {
+$(".saveBtn").on("click", function(){
 
     //setting items in the local storage
     localStorage.setItem("9AM", (text9AM.val()));
@@ -65,4 +65,10 @@ $("#text3PM").append(localStorage.getItem("15PM"));
 $("#text4PM").append(localStorage.getItem("16PM"));
 $("#text5PM").append(localStorage.getItem("17PM"));
 
+//function for clear button
+$(".clearBtn").on("click", function(){
+    localStorage.clear();
+    location.reload();
+    return
 
+})
