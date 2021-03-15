@@ -1,0 +1,115 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  background-color: #161625;
+}
+
+textarea {
+  background: transparent;
+  resize: none;
+  border:none;
+  padding: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: #e1e1ff;
+  border-radius: 0;
+  border-bottom: 5px solid #e1e1ff;
+}
+
+#currentDay {
+  color:#9490fb;
+}
+
+.description {
+  white-space: pre-wrap;
+}
+
+.row {  
+  white-space: pre-wrap;
+  height: 80px;
+}
+
+.hour {
+ color: #e1e1ff;
+  border-top: 2px solid #9490fb;
+  padding: 10px;
+}
+
+.past {
+  background-color: #d3d3d3;
+  color: black;
+  border-color: #9490fb;
+  font-size: x-large;
+  text-align: center;
+}
+
+.present {
+  background-color: #ff6961;
+  color: black;
+  border-color: #9490fb;
+  font-size: x-large;
+  text-align: center;
+}
+
+.future {
+  background-color: #77dd77;
+  color: black;
+  border-color: #9490fb;
+  font-size: x-large;
+  text-align: center;
+}
+
+.saveBtn {
+
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #9490fb;
+  color: #7975fa;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/*These rules take effect when the browser's width
+is either 767px or less. 
+*/
+
+@media screen and (max-width: 767px) {       
+
+  .jumbotron{
+    height: 300px;
+  }
+  p{
+    font-size: smaller;
+  }
+  .saveBtn i{
+    font-size: 20px;
+    position: relative;
+    bottom:9px;
+  }
+}
+
+/*
+  These rules take effect when the browser's width
+  is either 400px or less.
+*/
+
+@media screen and (max-width: 500px) {
+  .jumbotron{
+    height: 300px;
+  }
+  .hour{
+    margin-right: 0px;
+  }
+  .saveBtn i{
+    font-size: 17px;
+    position: relative;
+    bottom:10px;
+  }
+}
