@@ -17,7 +17,7 @@ textarea {
   background-color: transparent;
   color: #e1e1ff;
   border-radius: 0;
-  border-bottom: 5px solid #e1e1ff;
+  border-bottom: 4px solid #e1e1ff;
 }
 
 #currentDay {
@@ -64,16 +64,20 @@ textarea {
 }
 
 .saveBtn {
-
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #9490fb;
-  color: #7975fa;
+  color: #645efd;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+footer {
+  color:#e1e1ff;
+  background-color:#10101b ;
 }
 
 /*These rules take effect when the browser's width
