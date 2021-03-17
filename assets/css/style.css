@@ -120,10 +120,16 @@ textarea {
 }
 
 footer {
-  color:#e1e1ff;
-  background-color:#1f1e1e ;
+  color:var(--font-color);
+  background-color:#292727 ;
   text-align: center;
   width: 100%;
+  font-size: 13px;
+}
+
+.customPadding {
+  padding-bottom: 100px;
+  padding-left: 8%;
 }
 
 /*These rules take effect when the browser's width
@@ -150,7 +156,7 @@ is either 767px or less.
 
 @media screen and (max-width: 540px) {
   .jumbotron{
-   height:330px
+   height:320px
   }
   .hour{
     margin-right: 0px;
