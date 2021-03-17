@@ -1,8 +1,19 @@
+:root {
+  --primary-color: #3fca95;
+  --font-color: #f2fff8;
+  --secondary-font-color:#000000;
+  --border-color: #51fcba;
+  --secondary-border-color: rgb(37, 37, 37);
+  --bg-color: #292b2c;
+  --secondary-bg-color:#c0cebf;
+  --box-shadow: 0 0 20px #51fcba41;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
-  background-color: #161625;
+  background-color: var(--bg-color);
 }
 
 textarea {
@@ -15,13 +26,14 @@ textarea {
 .jumbotron {
   text-align: center;
   background-color: transparent;
-  color: #e1e1ff;
-  border-radius: 0;
-  border-bottom: 4px solid #e1e1ff;
+  color: var(--font-color);
+  border-bottom: 4px solid var(--border-color);
+  padding:0;
+  height: 270px;
 }
 
 #currentDay {
-  color:#9490fb;
+  color:var(--primary-color);
 }
 
 .description {
@@ -35,14 +47,14 @@ textarea {
 
 .hour {
  color: #e1e1ff;
-  border-top: 2px solid #9490fb;
+  border-top: 2px solid var(--border-color);
   padding: 10px;
 }
 
 .past {
   background-color: #d3d3d3;
   color: black;
-  border-color: #9490fb;
+  border-color:  var(--border-color);
   font-size: x-large;
   text-align: center;
 }
@@ -50,7 +62,7 @@ textarea {
 .present {
   background-color: #ff6961;
   color: black;
-  border-color: #9490fb;
+  border-color:  var(--border-color);
   font-size: x-large;
   text-align: center;
 }
@@ -58,17 +70,18 @@ textarea {
 .future {
   background-color: #77dd77;
   color: black;
-  border-color: #9490fb;
+  border-color:  var(--border-color);
   font-size: x-large;
   text-align: center;
 }
 .clearBtn {
   border-radius: 25px;
-  width: 10%;
-  height: 70%;
-  background-color: #9490fb;
-  color: #37348f;
+  width: 30%;
+
+  background-color: var(--primary-color);
+  color: #dfdfdf;
   font-size: 25px;
+  position: relative;
 }
 
 .resetP {
@@ -78,8 +91,8 @@ textarea {
 .saveBtn {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #9490fb;
-  color: #645efd;
+  background-color: var(--primary-color);
+  color: #e7e7e7;
 }
 
 .saveBtn i:hover {
@@ -89,7 +102,11 @@ textarea {
 
 footer {
   color:#e1e1ff;
-  background-color:#10101b ;
+  background-color:#1f1e1e ;
+  text-align: center;
+  width: 100%;
+  
+  
 }
 
 /*These rules take effect when the browser's width
@@ -99,7 +116,7 @@ is either 767px or less.
 @media screen and (max-width: 767px) {       
 
   .jumbotron{
-    height: 300px;
+   
   }
   p{
     font-size: smaller;
@@ -116,9 +133,9 @@ is either 767px or less.
   is either 400px or less.
 */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 540px) {
   .jumbotron{
-    height: 300px;
+   height:330px
   }
   .hour{
     margin-right: 0px;

@@ -22,15 +22,15 @@
     <title>Work Day Scheduler</title>
   </head>
 
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <header class="jumbotron">
       <h1 class="display-3 text-center">Work Day Scheduler!</h1>
-      <p class="lead description">A simple calendar app for scheduling your work day</p>
-      <div class="row justify-content-center display-4">
-        <p class="mx-3">Today is:</p>
-        <p id="currentDay" class="lead display-4 customColor"></p>  
+      <p class="lead description p-3">A simple calendar app for scheduling your work day</p>
+      <div class=" justify-content-center ">
+        <p class=" col-12">Today is:</p>
+        <p id="currentDay" class="lead display-4 customColor col-12"></p>  
       </div>
-      <button class="btn clearBtn">Clear!</button>
+      <button class="btn clearBtn col-12">Clear!</button>
     </header>
     
     <main class="container text-right">
@@ -38,7 +38,7 @@
         <div class="input-group  col-12 form-group">
           <p class="hour col-1">9am</p>
           <textarea id=text9AM class="form-control textborder col-9" rows="2" style="resize:none" name="9"></textarea>
-          <button class="col-1 btn saveBtn"> <span style="font-size: 2.5em; color: #645efd "><i class="far fa-list-alt"></i></span></button>
+          <button class="col-1 btn saveBtn"> <span style="font-size: 2.5em; color: #ffffff "><i class="far fa-list-alt"></i></span></button>
         </div>
       </section>
       
@@ -46,7 +46,7 @@
           <div class="input-group col-12 form-group">
             <p class="hour col-1">10am</p>
             <textarea id=text10AM class="form-control textborder col-9" rows="2" style="resize:none" name="10"></textarea>
-            <button class="  col-1  btn saveBtn"> <span style="font-size: 2.5em; color: #645efd "><i class="far fa-list-alt"></i></span></button>
+            <button class="  col-1  btn saveBtn"> <span style="font-size: 2.5em; color: #ffffff "><i class="far fa-list-alt"></i></span></button>
           </div>
       </section> 
 
@@ -54,7 +54,7 @@
         <div class="input-group col-12 form-group">
           <p class="hour col-1">11am</p>
           <textarea id=text11AM class="form-control textborder col-9" rows="2" style="resize:none" name="11"></textarea>
-          <button class="  col-1 btn saveBtn"> <span style="font-size: 2.5em; color: #645efd "><i class="far fa-list-alt"></i></span></button>
+          <button class="  col-1 btn saveBtn"> <span style="font-size: 2.5em; color: #ffffff "><i class="far fa-list-alt"></i></span></button>
         </div>
       </section>
 
@@ -62,7 +62,7 @@
         <div class="input-group col-12 form-group">
           <p class="hour col-1">12am</p>
           <textarea id=text12AM class="form-control col-9" rows="2" style="resize:none" name="12"></textarea>
-          <button class="  col-1 btn saveBtn"> <span style="font-size: 2.5em; color: #645efd "><i class="far fa-list-alt"></i></span></button>
+          <button class="  col-1 btn saveBtn"> <span style="font-size: 2.5em; color: #ffffff "><i class="far fa-list-alt"></i></span></button>
         </div>
       </section>
       
@@ -70,7 +70,7 @@
         <div class="input-group col-12 form-group">
           <p class="hour col-1">1pm</p>
           <textarea id=text1PM class="form-control textborder col-9" rows="2" style="resize:none" name="13"></textarea>
-          <button class="  col-1 btn saveBtn"> <span style="font-size: 2.5em; color: #645efd "><i class="far fa-list-alt"></i></span></button>
+          <button class="  col-1 btn saveBtn"> <span style="font-size: 2.5em; color: #ffffff "><i class="far fa-list-alt"></i></span></button>
         </div>
       </section>
       
@@ -78,7 +78,7 @@
         <div class="input-group col-12 form-group">
           <p class="hour col-1">2pm</p>
           <textarea id=text2PM class="form-control textborder col-9" rows="2" style="resize:none" name="14"></textarea>
-          <button class="  col-1 btn saveBtn"> <span style="font-size: 2.5em; color: #645efd "><i class="far fa-list-alt"></i></span></button>
+          <button class="  col-1 btn saveBtn"> <span style="font-size: 2.5em; color: #ffffff "><i class="far fa-list-alt"></i></span></button>
         </div>
       </section>
       
@@ -86,7 +86,7 @@
         <div class="input-group col-12 form-group">
           <p class="hour col-1">3pm</p>
           <textarea id=text3PM class="form-control textborder col-9" rows="2" style="resize:none" name="15"></textarea>
-          <button class="  col-1 btn saveBtn"> <span style="font-size: 2.5em; color: #645efd "><i class="far fa-list-alt"></i></span></button>
+          <button class="  col-1 btn saveBtn"> <span style="font-size: 2.5em; color: #ffffff "><i class="far fa-list-alt"></i></span></button>
         </div>
       </section>
       
@@ -94,7 +94,7 @@
         <div class="input-group col-12 form-group">
           <p class="hour col-1">4pm</p>
           <textarea id=text4PM class="form-control col-9" rows="2" name="16"></textarea>
-          <button class="col-1 btn saveBtn"> <span style="font-size: 2.5em; color: #645efd "><i class="far fa-list-alt"></i></span></button>
+          <button class="col-1 btn saveBtn"> <span style="font-size: 2.5em; color: #ffffff "><i class="far fa-list-alt"></i></span></button>
         </div>
       </section>
       
@@ -102,7 +102,7 @@
         <div class="input-group col-12 form-group">
           <p class="hour col-1">5pm</p>
           <textarea id=text5PM class="textborder form-control col-9" rows="2" style="resize:none" name="17"></textarea>
-          <button class="  col-1 btn saveBtn"> <span style="font-size: 2.5em; color: #645efd "><i class="far fa-list-alt"></i></span></button>
+          <button class="  col-1 btn saveBtn"> <span style="font-size: 2.5em; color: #ffffff "><i class="far fa-list-alt"></i></span></button>
         </div>
       </section>
     </main>
@@ -111,7 +111,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="assets/js/sripts.js"></script>
 
-    <footer class="nav fixed-bottom justify-content-center p-4">
+    <footer class="p-4 mt-auto">
       Site created with 💜 by Brandon Ford
     </footer>
   </body>
