@@ -29,7 +29,24 @@ textarea {
   color: var(--font-color);
   border-bottom: 4px solid var(--border-color);
   padding:0;
-  height: 270px;
+  height: 250px;
+}
+
+.customCard {
+  outline: solid 1px  var(--border-color);;
+  transition: outline 0.6s linear;
+  border: none;
+}
+
+.customCard:hover{
+  outline-width: 4px;
+}
+
+.customCard:focus {
+  outline-width: 4px;
+  outline: solid 4px  var(--border-color);;
+  transition: outline 0.6s linear;
+  border: none;
 }
 
 #currentDay {
@@ -48,7 +65,8 @@ textarea {
 .hour {
  color: #e1e1ff;
   border-top: 2px solid var(--border-color);
-  padding: 10px;
+  padding-top: 10px;
+  padding-right: 40px;
 }
 
 .past {
@@ -74,14 +92,15 @@ textarea {
   font-size: x-large;
   text-align: center;
 }
+
 .clearBtn {
   border-radius: 25px;
-  width: 30%;
-
+  width: 20%;
+  height: 12%;
   background-color: var(--primary-color);
-  color: #dfdfdf;
-  font-size: 25px;
-  position: relative;
+  color: #161616;
+  font-size: 15px;
+  bottom: 10px;
 }
 
 .resetP {
@@ -105,8 +124,6 @@ footer {
   background-color:#1f1e1e ;
   text-align: center;
   width: 100%;
-  
-  
 }
 
 /*These rules take effect when the browser's width
@@ -115,9 +132,7 @@ is either 767px or less.
 
 @media screen and (max-width: 767px) {       
 
-  .jumbotron{
-   
-  }
+ 
   p{
     font-size: smaller;
   }
