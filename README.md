@@ -1,4 +1,17 @@
-# 05 Third-Party APIs: Work Day Scheduler
+# Third-Party APIs: Work Day Scheduler
+
+## Technologies Used
+```
+HTML5
+CSS3
+Javascript
+Boottrap
+Jquery
+Moment.js
+```
+
+## Deployed Site
+https://brandonfordd.github.io/day_planner/
 
 ## Task
 
@@ -31,7 +44,11 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
 ```
-link to site : https://brandonfordd.github.io/day_planner/
 
-screenshot:
+## Screenshot
+
+1.
 ![alt text](https://github.com/brandonfordd/day_planner/blob/main/images/day_planner_screenshot.png?raw=true)
+
+2.
+![alt text](https://github.com/brandonfordd/day_planner/blob/main/images/screenshot-planner1.png?raw=true)
